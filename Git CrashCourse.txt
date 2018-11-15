@@ -1,0 +1,32 @@
+$ git init        //Initialize Local Git Repository
+
+$ git add <file>  //Add Files To Index
+
+$ git status      //Check Status Of Working Tree
+ 
+$ git commit               //Commit Changes In Index
+
+$ git push                 //Push To Remote Repository
+   
+$ git pull                 //Pull Latest From Remote Repository
+
+$ git clone                //Clone Repository Into A New Directory
+
+$ git rm --cached <file>   //Remove File From Staging Area
+
+$ git add *.type 	   //Adds Every File Of The Same Type Into Git Repositorygit 
+
+$ git add .    		   //Adds Every File To Git Repositiry
+
+$ git commit -m 'comment'  //Commits 
+
+$ touch <file>  	  //Creates File
+
+$ touch .gitignore        //Ignore Files When Adding
+                          //On .gitignore Add Filename, /Folder, or *.<filetype>
+
+$ git branch <name>       //Creates Branch (For Not Finished Edits)
+
+$ git merge <BranchName>  //Use To Merge Branches (Use When Finish A Function)
+
+$ git clone <link>        //Pulls Repository

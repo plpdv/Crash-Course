@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JSON Crash Course</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    
+    <script>
+        var person = {
+            name: "Petaa",
+            age: 35,
+            adress: {
+                strt: 2,
+                col: 'tool'
+            },
+        }
+        
+          person = JSON.stringify(person);  //Converts to string
+          person = JSON.parse(person);  //Converts to object
+
+        console.log(person.adress.col);
+    </script>
+    
+</body>
+</html>

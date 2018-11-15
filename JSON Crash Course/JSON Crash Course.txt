@@ -1,0 +1,28 @@
+JSON -> JavaScript Object Notation
+
+Lightweight data-interchange format
+
+Based on a subset of JS
+
+Data Types of JSON:
+- Number: No difference between integer and floats
+- String: String of Unicode characters. Use double quotes.
+- Boolean: True or False.
+- Array: Ordered list of 0 or more values. "Array": ["value", "value2"],
+- Object: Unordered collection key/values pairs. "Object": { "key":"val", "key2":"obj2"},
+- Null: Empty value.
+
+
+JSON Syntax Rules:
+- Uses key/value pairs. Example: {"Name": "Peeta"}
+- Uses double quotes around KEY and VALUE  
+  (JS DOESN'T uses quotes on key, JSON DOES)
+- Must use the specified data types
+- Files tyoe ".json"
+- MIME type is "Application/json"
+
+Ejercicios: 
+
+Accesa al primer valor dentro de un array dentro de un objeto
+Crea un array de objetos
+Make a list using js and for loop that shows in html

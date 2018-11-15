@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<body id="body">
+    <div class="header">
+        <h1 id="heading">Learning JavaScript</h1>
+        <p>With Brad Traversy</p>
+    </div>
+    <br/>
+    <form method="post" action="" name="myForm">
+        <div>
+            <label>First Name</label>
+            <input type="text" name="firstName" id="firstName" />
+        </div>
+        <br/>
+        <div>
+                <label>Last Name</label>
+                <input type="text" name="lastName" id="lastName" />
+        </div>
+        <br/>
+        <div>
+            <label>Background</label>
+            <select name="background" id="background" onchange="changeBackground(this)">
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+            </select>
+        </div>
+        <br/>
+        <input type="submit" value="Submit" />
+    </form>
+
+<script>
+function changeBackground(x){
+    console.log(x.value);
+    var heading = document.getElementById("heading");
+    heading.style.color = x.value;
+
+}
+
+/*
+//Array of objects
+
+var users = [
+    {
+        name: 'John Doe',
+        age: 35
+    },
+    {
+        name: 'Johny Doe',
+        age: 36
+    },
+    {
+        name: 'Johnathan Doe',
+        age: 37
+    }
+];
+
+console.log(users[0].name)
+
+//Constructor Pattern
+function fruit(name, color, shape){
+    this.name = name;
+    this.shape = shape;
+    this.color = color;
+}
+
+var apple = new fruit('apple', 'round', 'red');
+var melon = new fruit('melon', 'round', 'orange');
+
+console.log(apple);
+console.log(melon);
+  
+//object Constructor 
+
+var apple = new Object();
+apple.color = 'red';
+apple.shape = 'round';
+
+apple.describe = function(){
+    return 'An apple is color: ' + this.color + ' and is the shape: ' + this.shape;
+}
+
+console.log(apple.describe());
+
+//Different examples, same results.
+
+var person = {
+    firstName: 'Brad',
+    lastName: 'Traversy',
+    age: 34,
+    children: ['Brianna', 'Nicholas'],
+    adress: {
+        street: '555 something',
+        city: 'Boston',
+        state: 'Ma'
+    },
+    fullName: function(){
+            return this.firstName + " " + this.lastName;
+    }
+}
+console.log(person.fullName());
+*/
+</script>
+
+</body>
+</html>
